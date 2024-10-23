@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+    body{
+        margin: 0;
+        font-family: 'Proza Libre', sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        background: rgb(235,218,208);
+        color: rgb(27,59,70);
+    }
+
+    h1,
+    h2,
+    h4 {
+        font-family: 'Cormorant Garamond', serif;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    figcaption {
+        font-size: .6rem;
+        font-style: italic;
+        }
+
+/* ****************** Responsive Image************************ */
+
+    img {
+        width: 100%;
+    }
+
+/* ****************** Sticky top nag for mobile ************************ */
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+      }
+    
+    #mobile-container .one {
+        padding-top: 14em;
+    }  
+
+    .anchor {
+        display: block;
+        position: relative;
+        top: -250px;
+        visibility: hidden;
+    }
+
+/* ****************** Navigation Styles ************************ */
+
+    .main-header {
+        background: rgb(182,186,195);
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    }
+
+    .main-header ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .main-header ul li{
+        margin: 1em .2em 2em;
+    }
+
+    .main-header a{
+        color: RGB(27, 59, 70);
+    }
+    .main-header a:hover {
+        color: rgb(235, 221, 212);
+    }
+
+    ul li {
+        list-style: none;  
+    }
+
+    ul a {
+        text-decoration: none;
+        font-size: .8em;
+    }
+
+/* ****************** Layout Style ************************ */
+
+    h1 {
+        padding: .6em 0;
+        font-size: 2.4em;
+    }
+
+    h1,
+    h2{
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .box {
+        width: 90%;
+        margin: auto;
+    }
+
+    #mobile-container .one, 
+    #mobile-container .two, 
+    #mobile-container .three, 
+    #mobile-container .four, 
+    #mobile-container .five, 
+    #mobile-container .six {
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        margin-top: 3em;
+        border-bottom: 2px solid rgb(182,186,195);
+    }
+
+    #container {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
+    }
+
+
+/* **************************** Media Queries ******************************* */
+
+/* **************************** Start of Tablet Styles***************** */
+
+@media (min-width: 626px) and (max-width: 1410px){
+
+    body {
+        background-image: url(../img/bg_img.jpg);
+        background-size: contain;
+    }
+
+    #container {
+        display: block;
+    }
+
+    #mobile-container {
+        display: none;
+    }   
+
+/* ************************** Navigation Style *************************** */
+
+    .tab-hide {
+        display: none;
+    }
+
+    h2{
+        padding-top: 1em; 
+    }
+
+    .main-header h2{
+        font-size: 1.4em;
+    }
+
+    #container ul a {
+        font-size: 1em;
+    }
+/* ************************** Tablet Layout Style *************************** */
+
+    .box {
+        width: 90%;
+        margin: auto;
+    }
+
+    .wrapper-one {
+        margin-top: 2em;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .wrapper-two {
+        margin-top: 15em;
+        width: 50%;
+        display: inline-block;
+        float: right;
+        display: flex;
+    }
+
+/* ************************** Card Style *************************** */
+
+    #container figcaption{
+        padding-top: 5px;
+    }
+
+    .b-timeline {
+        display: none;
+    }
+
+    .t-flexbox,
+    .b-flexbox,
+    .card,
+    .card-content {
+        display: flex;
+    }
+
+    .t-flexbox,
+    .b-flexbox {
+        flex-direction: column;
+    }
+
+    .card {
+        position: relative;
+        border-top: 2px solid black;
+    }
+
+    .card-content {
+        width: 80%;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .card-content .t-timeline {
+        position: absolute;
+        right: 0;
+        margin-right: 1em;
+        }
+
+    .b-flexbox .card-content{
+     margin-left: auto;
+    }
+
+    .b-flexbox h4 {
+        position: absolute;
+        left: 0;
+        margin-left: 1em;
+    }
+
+    img {
+        margin-top: 6.2em;
+    }
+
+/* ************************** Footer Style *************************** */
+
+    footer {
+     margin: 40% 0 0 20%;
+     border-top: 2px solid rgb(182,186,195);
+     padding: 2em;
+    }
+}
+
+/* ************************* Start of Desktop Style ************************** */
+
+@media (min-width: 1410px) and (orientation: landscape) {
+
+    #container {
+        display: inline-block;
+    }
+
+    #mobile-container {
+        display: none;
+    }
+
+/* ************************** Navigation Style *************************** */
+
+    .hide {
+        display: none !important;
+    }
+
+    .main-header h2{
+        font-size: 1.4em;
+    }
+
+
+
+    .main-header {
+        float: left;
+        width: 15vw;
+        height: 100%;
+        display: inline-block;
+        white-space:pre-wrap;
+        box-shadow: 4px 2px 2px -2px rgba(0,0,0,.2);
+    }
+
+    .main-header h1{
+        padding: 2em;
+    }
+
+    .main-header ul{
+        display: block;
+        padding-left: 1em;
+    }
+
+    .main-header ul li{
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+/* ************************** Hover img caption *************************** */
+
+    figcaption {
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+        background: rgba(255,255,255,.98);
+        font-size: .8em;
+        font-style: normal;
+    }
+
+    .hoveranchor {
+        position: relative;
+    }
+
+    .card img {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        }
+
+    a:hover figcaption {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    .b-flexbox p,
+    .t-flexbox p{
+        position: relative;
+        top: 6em;
+    }
+
+    .b-flexbox .card {
+        width: 320px;
+    }
+
+/* ************************** Card Style *************************** */
+
+    .card {
+        width: 300px;
+        height: 45.5vh;
+        padding: 20px;
+        border-left: 2px solid rgb(27,59,70);
+        white-space:pre-wrap;
+    }
+
+    .b-timeline,
+    .t-flexbox p,
+    .t-flexbox img {
+        display: block;
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
+    .t-timeline {
+        display: none;
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+/* ************************** Layout Style *************************** */
+    .box {
+        width: 100vw;
+        height: 100vh;
+        display: inline-block;
+        background-color: rgb(235,221,212);
+    }
+
+    .wrapper-one {
+        width: 85vw;
+        height: 50%;
+        display: inline-block;
+    }
+
+    .wrapper-two {
+        width: calc(100vw);
+        height: 50%;
+        display: block;
+        border-top: 4px solid rgb(27, 59, 70);
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /********************************** Flexbox *****************************/
+
+    .t-flexbox,
+    .b-flexbox,
+    .main-header,
+    .card,
+    .card-content {
+        display: flex;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b-flexbox {
+        justify-content: space-evenly;
+    }
+
+    .card-content {
+        flex-direction: column;
+        }
+
+    .t-flexbox{
+        justify-content: space-around;
+    }
+
+    footer {
+        display: none;
+    }
+
+/****************************** Horizontal Scroll ***************************/
+
+    #container {
+        overflow-y:scroll;
+        overflow-x:hidden;
+        transform: rotate(270deg) translateX(-100%);
+        transform-origin: top left;
+        background-color: RGB(182, 186, 195);
+        position:absolute;
+        width:100vh;
+        height:100vw;
+        }
+
+    #container2 {
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+        white-space:nowrap;
+        }
+}
