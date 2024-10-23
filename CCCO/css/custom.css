@@ -1,0 +1,255 @@
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* ******************  Nav style *********************/
+
+.navbar {
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -88px;
+    visibility: hidden;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #f17072 !important;
+    background: rgb(255, 255, 255, .1);
+}
+
+.offcanvas-header{ display:none; }
+
+/* ******************  home style *********************/
+
+.hero1{
+    height: 460px;
+    background: url(../img/home_cello.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.display-1 {
+    font-size: 3.3em;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.gap {
+    padding-top: 30px;
+}
+
+/* *****************************  button style **********************************/
+
+.btn {
+    background: #2f5e84;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.4);
+}
+
+.btn-color {
+    color: #f1b743;
+}
+
+.text-pink {
+    color: #fdd5be;
+}
+
+button:hover {
+    color: #2f5e84 !important;
+    background: #f1b743;
+}
+
+.jumbotron2 .btn {
+    width: 240px;
+}
+
+.donate-button {
+    background: #153242;
+    width: 170px;
+    height: 170px;
+    color: white;
+}
+
+
+/* *****************************  Page Elements ****************************/
+
+.about_circle {
+    width: 260px;
+    height: 260px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: -60px;
+    background-color:rgb(241, 183, 67, 0.6);
+    z-index: 0;
+}
+
+.full-height img {
+    position: relative;
+    z-index:1;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.bg-yellow {
+    background: #f1b743;
+}
+
+.text-blue {
+    color: #2f5e84;
+}
+
+.bg-blue {
+    background: #2f5e84;
+}
+
+.bg-darkblue {
+    background: #163242;
+}
+
+.donate-bg {
+    background: url(../img/donate-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**************** Media Queries ****************/
+
+@media (max-width: 992px) {
+  .offcanvas-header{ 
+      display: block; 
+    }
+  .navbar-collapse {
+    position: fixed;
+    top:95px; 
+    bottom: 0;
+    left: 100%;
+    height:100vh;
+    width: 100%;
+    overflow-y: auto;
+    visibility: hidden;
+    background: url(../img/boypiano.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+
+  .navbar-nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: calc(80vh - 60px);
+    
+    }
+
+  .navbar-nav .nav-item {
+      margin: auto;
+      font-size: 1.8em;
+  }
+
+  .bottom-nav {
+      display: none;
+  }
+
+  /* .nav-item .text-secondary {
+    color: #383838 !important;
+  } */
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    }
+
+    .display-4 {
+        font-size: 2.4em;
+    }
+
+    .donate-bg {
+        background: white;
+    }
+
+    .desktop-calendar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+.hero1,
+.jumbotron2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.jumbotron2 p,
+.jumbotron2 h1{
+    text-align: left;
+}
+
+.phone-nav {
+    display: none;
+}
+
+.full_height {
+    height: 100vh;
+}
+
+/* customize .nav-pills on scrollspy */
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #f17072 !important;
+    background-color: white;
+}
+
+.bg-calendar {
+    background: url(../img/calendar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(80, 86, 89, .5) !important;
+}
+
+.border-right {
+    border-right: 1px solid rgb(80, 86, 89, .5) !important;
+}
+
+.calendar {
+    box-shadow: -10px -10px 16px rgba(53, 49, 49, 0.6);
+}
+
+.address {
+    margin-left: 7.6em;
+    padding-left: 1.6em;
+    border-left: 1px solid black;
+}
+
+.events {
+    height: 90vh;
+}
+
+
+

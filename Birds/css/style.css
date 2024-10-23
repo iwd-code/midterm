@@ -1,0 +1,378 @@
+/* Web Fonts -------------------- */
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h4 {
+  font-family: Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif; 
+}
+
+h1 {  
+  font-size: 3.8rem; 
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+  margin: 12px 0 0;
+}
+
+h2 {
+  font-size: 2.4em; 
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3,
+h4{
+  color: #1e425e;
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+h4{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+.birdpics{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 460px;
+}
+
+.col p,
+.col h4{
+  padding-left:20px;
+  padding-right:20px;
+  margin: 0;
+}
+
+.col {
+  box-shadow: .5px .5px 6px #cac7c7;  
+}
+
+.col p{
+  padding-bottom: 20px;
+}
+
+small{
+  font-weight: 200;
+  font-size: 12px;
+}
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: salmon;
+  text-decoration: none;
+}
+
+a:visited {
+  color: dodgerblue;
+}
+
+a:hover {
+  color: darksalmon;
+}
+
+a:active {
+  color: olive;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 200px;
+  height: 850px;
+  background: linear-gradient(#1e425e, transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
+              #1e425e url('../img/birdmountain2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  font-weight: 200;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content,
+.gallery {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.button {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+  background: salmon;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 4px 6px #888888;
+}
+
+.button:hover{
+  background: darksalmon;
+}
+
+.button a{
+  color: #1e425e;
+}
+
+.topic {
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #256670;
+}
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+.b-border {
+  border-bottom: 2px solid #dfe2e6;
+}
+
+/* Layout Styles ------------------ */
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+
+.primary-content, 
+.secondary-content,
+.gallery{
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.birdlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid salmon;
+  margin: 60px 0 60px;
+  background: #434a52 url('../img/smilyowl2.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+  border-radius: 10px;
+}
+
+.arrow {
+  width: 50px;
+  margin-top: 300px;
+}
+
+/* Floated Columns ------------------ */
+.col {
+  width: 46.5%;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+.reasons,
+.steps {
+  width: 46.5%;
+}
+
+.reasons,
+.col {
+  float: left;
+}
+
+.steps {
+  float: right;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries -------------------- */
+
+@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content,
+  .gallery {
+    width: 90%;
+    padding:20px;
+  }
+
+  .birdlife {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+
+  .birdpics {
+    width: 100%;
+  }
+
+  h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .birdlife h2 {
+    font-size: 1.8rem;
+  }
+  
+  .col {
+    width: 46%;
+    margin: 2% 1%;
+  }
+  .topic {
+    margin-top: 1em;
+  }
+  .button {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .primary-content,
+  .secondary-content,
+  .gallery {
+    width: 90%;
+    border-top: none;
+    padding: 0;
+  }
+
+  .main-header {
+    max-height: 400px;
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    border: none;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .intro {
+    font-size: 1rem;
+    margin-top: 3em;
+  }
+
+  .birdlife h2 {
+    font-size: 1.8rem;
+  }
+
+  .birdlife p{
+    font-weight: 300;
+  }
+
+  .reasons,
+  .steps
+  {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .col {
+    float: none;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .main-footer {
+    padding: 20px 0;
+  }
+
+  ul,
+  ol{
+    padding-left: 30px;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+	* {
+		box-sizing: border-box;
+		}
+
+	html {
+		scroll-behavior: smooth;
+		}
+
+	body {
+		font-family: 'Varela Round', sans-serif;
+		line-height: 1.6;
+		color: #3a3a3a;
+		}
+
+	p {
+		font-size: .95em;
+		margin-bottom: 1.8em;
+		}
+
+	h2,
+	h3,
+	a {
+		color: #943724;
+		}
+
+	h2,
+	h3,
+	h4 {
+		margin-top: 0px;
+		}
+
+	h4 {
+		margin-bottom: .4em;
+		}
+
+	a {
+		text-decoration: none;
+		}
+
+	img {
+		max-width: 100%;
+		}
+
+	figure {
+		margin: 0;
+		line-height: 0;
+		position: relative;
+		}
+
+	figcaption {
+		font-size: .9em;
+		line-height: 1.5;
+		color: #fff;
+		padding: 1em;	
+		background: rgb(148, 55, 36);
+		position: absolute;
+		bottom: -10;
+		width: 100%;
+		}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+	.name {
+		font-size: 1.25em;
+		margin: 0;
+        font-family: 'Fredericka the Great', cursive;
+		}
+
+	.main-nav {
+		margin-top: 5px;
+		}
+
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+		}
+		
+	.main-nav a {
+		font-size: .95em;
+		color: #f2928d;
+		text-transform: uppercase;
+		}
+
+	.main-nav a:hover {
+		color: rgb(77, 72, 52, .50);
+		}
+
+/* ---- Layout Containers ---- */
+
+	.main-header {
+		padding-top: .5em;
+		padding-bottom: .5em;
+		}
+
+	.banner,
+	.main-footer {
+		text-align: center;
+		}
+
+	.banner {
+		color: rgb(77, 72, 52, .85);
+		background: #f2ede9;
+		padding: 3.2em 0;
+		margin-bottom: 60px;
+		}
+
+	.col {
+		padding-right: 1em;
+		padding-left: 1em;
+		}
+
+	.mt-80 {
+		margin-top: 90px;
+		}
+
+	.mb-80 {
+		margin-bottom: 80px;
+		}
+
+	.main-footer {
+		background: rgb(148, 55, 36, .25);
+		padding: 2em 0;
+		margin-top: 30px;
+		}
+
+/* ---- Page Elements ---- */
+
+	.logo {
+		width: 300px;
+		margin: auto;
+		}
+
+	.headline {
+		margin-bottom: 0;
+		}
+
+	.icon-location {
+		width: 35px;
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		z-index: 2;
+		}
+	
+	.primary ul {
+		list-style-type: square;
+		padding-left: 20px;
+		margin: 0;
+		}
+	.primary ul li {
+		padding-left: 10px;
+	}
+
+/* ================================= 
+  Survey Form Styles
+==================================== */
+	.bg-main {
+		background: #f2ede9;
+		}
+
+	.center {
+		text-align: center;
+		}
+
+	form {
+		max-width: 360px;
+		margin: 50px auto;
+		padding: 10px 20px;
+		background: rgb(237, 165, 93, .25);
+		border-radius: 8px;
+		text-align: left;
+		}
+
+	.signup {
+		margin: 10px 0 10px 0;
+		text-align: center;
+		color: rgb(77, 72, 52, .85);
+		}
+
+	input[type="text"],
+	input[type="phone"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	textarea,
+	select {
+	background: rgba(255,255,255);
+	border: none;
+	font-size: 16px;
+	font-weight: bolder;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	background-color: #f2ede9;
+	color: rgb(77, 72, 52, .85);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1) inset;
+	margin-bottom: 30px;
+		}
+
+	input[type="radio"],
+	input[type="checkbox"] {
+	margin: 0 4px 8px 0;
+		}
+
+	select {
+		padding: 6px;
+		height: 32px;
+		border-radius: 2px;
+		}
+
+	button {
+	padding: 19px 39px 18px 39px;
+	background-color: #f2928d;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #fa8d87;
+	border-width: 1px 1px 3px;
+	box-shadow: 5px -1px 0 rgba(255,255,255,0.1) inset;
+	margin: 30px 0 10px 0;
+		}
+
+	button a:hover{
+		color: white;
+		}
+
+	fieldset {
+		margin-bottom: 20px;
+		border: none;
+		}
+	
+	legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+		}
+
+	label {
+	display: block;
+	margin-bottom: 8px;
+		}
+
+	label.light {
+	font-weight: 300;
+	display: inline;
+		}
+
+	.number {
+	background-color: #fa8d87;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 100%;
+		}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media screen and (min-width: 480px) {
+
+	form {
+	  max-width: 480px;
+		}
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 68px;
+		}
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+		}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		}
+
+	.stickfooter{
+		min-height: calc(100vh - 210px);
+		}
+
+	.name{
+		float: left;
+		}
+
+	.primary {
+		width: 70%;
+		margin: 0 auto;
+		}
+
+	.main-nav {
+		float: right;
+		}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+		}
+
+	.tagline {
+		font-size: 1.4em;
+		}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+		}
+
+}
+
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+		}
+		
+	.mt-80 {
+		margin-top: 80px;
+		}
+
+}
