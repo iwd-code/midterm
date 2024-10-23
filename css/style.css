@@ -107,7 +107,7 @@ a.contact_btn:link{
     color: #fff;
 }
 #header .logo:hover {
-    color:#E2B622;
+    color:#E2B622 !important;;
 }
 .hamburger{
     display: none;
